@@ -47,7 +47,7 @@ export const Main = () => {
       <Title>Ты сегодня покормил кота?</Title>
       <CardsWrapper>
         {products.map(product => (
-          <Card {...product} />
+          <Card key={product.taste + product.weight} {...product} />
         ))}
       </CardsWrapper>
     </Wrapper>
